@@ -27,8 +27,8 @@ app.post('/api/temperature/fahrenheit/to/celcius', function (req, res) {
 //kelvin to celsius and fahrenheit conversion
 app.post('/api/temperature/kelvin/to/celsiusfahrenheit', function (req, res) {
   var kelvin = req.body.kelvin;
-  var celsius = kelvin - 273.15; //formula for convertion kelvin to celsius
-  var fahrenheit = kelvin * 9 / 5 - 459.67; //formula for conversion kelvin to fahrenheit
+  var celsius = kelvin - 273.15; //formula for kelvin to celsius
+  var fahrenheit = kelvin * 9 / 5 - 459.67; //formula for kelvin to fahrenheit
   res.json({ 'celsius' : celsius, 'fahrenheit' : fahrenheit }); 
 });
 
