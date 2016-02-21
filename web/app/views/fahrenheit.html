@@ -1,3 +1,11 @@
 <div class="jumbotron">
   <h3>Fahrenheit > Celsius</h3>
+  <p class="lead">
+	Fahrenheit : <input type="text" ng-model="input.fahrenheit" />
+  </p>
+  <p class="lead" ng-if="output != null && output.celsius != null">
+  Celsius : {{ output.celsius }}
+  </p>
+   <p><button class="btn btn-lg btn-success" ng-click="convertTemperature()">Convert</button></p>
+   <a ng-href="#/celsius/to/fahrenheit">Celsius</a> | <a ng-href="#/kelvin/to/celsiusfahrenheit">Kelvin</a>
 </div>
